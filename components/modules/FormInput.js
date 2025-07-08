@@ -1,8 +1,11 @@
 import React from 'react'
 
-const FormInput = () => {
+const FormInput = ({name , lable , type , value , onchange}) => {
   return (
-    <div>FormInput</div>
+    <div className='fomr-input'>
+        <lable htmlFor={name}>{lable}</lable>
+        <input type={type} value={value} name={name} onchange={onchange}></input>
+    </div>
   )
 }
 
