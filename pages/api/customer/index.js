@@ -16,7 +16,7 @@ export default async function handler(req,res){
             return res.status(400).json({status:"failed",message:"invalid data"})
         }
         try{
-            const customer = await Customer.create({data})
+            const customer = await Customer.create(data)
             res.status(201).json({status:"success",message:"data created",data:data})
         }
         catch(err){

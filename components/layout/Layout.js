@@ -6,7 +6,7 @@ const Layout = ({children}) => {
     <>
         <header className='header'>
             <h2>MyCRM</h2>
-            <Link href={"/add-customer"}>add customer</Link>
+            <Link href={"/addCustomer"}>add customer</Link>
         </header>
         <div className='main'>
             {children}
