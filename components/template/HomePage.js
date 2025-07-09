@@ -1,8 +1,13 @@
 import React from 'react'
+import Card from '../modules/Card'
 
 const HomePage = ({customers}) => {
   return (
-    <div>HomePage</div>
+    <div>
+        {customers.map(customer=>(
+            <Card key={customer._id} customer={customer}></Card>
+        ))}
+    </div>
   )
 }
 
