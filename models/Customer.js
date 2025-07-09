@@ -13,7 +13,7 @@ const customerSchema = new Schema({
     phone:String,
     address : String,
     postalCode:Number,
-    data:Date,
+    date:Date,
     products:{
         type:Array,
         default:[]
