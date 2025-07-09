@@ -1,12 +1,9 @@
-import React from 'react'
-
-const FormInput = ({name , lable , type , value , onchange}) => {
+const FormInput = ({ name, label, type, value, onChange }) => {
   return (
     <div className='form-input'>
-        <lable htmlFor={name}>{lable}</lable>
-        <input type={type} value={value} name={name} onchange={onchange}></input>
+        <label htmlFor={name}>{label}</label>
+        <input type={type} value={value} name={name} onChange={onChange} />
     </div>
-  )
-}
-
+  );
+};
 export default FormInput
