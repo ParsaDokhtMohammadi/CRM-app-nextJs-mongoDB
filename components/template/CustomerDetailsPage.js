@@ -53,9 +53,9 @@ const CustomerDetailsPage = ({data}) => {
                 {
                     data.products.map((product,index)=>(
                         <React.Fragment key={index}>
-                            <p>{product.name}</p>
-                            <p>{product.price}</p>
-                            <p>{product.qty}</p>
+                            <span>{product.name}</span>
+                            <span>{product.price}</span>
+                            <span>{product.qty}</span>
                         </React.Fragment>
                     ))
                 }
